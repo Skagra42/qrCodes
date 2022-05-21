@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_zxing_core_3_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_google_zxing_javase_3_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Working on the QR code writer.">
+      <change afterPath="$PROJECT_DIR$/src/com/QRCodeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/QRCodeExtended.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qrCodes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/qrCodes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +68,19 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working on the QR code writer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on the QR code writer." />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1653098268923">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1653098268923" />
+    <state x="1177" y="112" key="CommitChangelistDialog2" timestamp="1653098385387">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1177" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1653098385387" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1652755544989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -79,9 +89,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="480" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1652755537949" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1652748932810">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1653094460605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1652748932810" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1653094460605" />
   </component>
 </project>
