@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Added to the questions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java_package/CodeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/CodeReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java_package/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java_package/QRCodeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/QRCodeData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Skagra42-loggerConstructorAndReformatting" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,6 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test.java_package.Main" />
+        <item itemvalue="Application.main.java_package.Main" />
         <item itemvalue="Application.main.java_package.Main" />
         <item itemvalue="Application.test.java_package.Main" />
       </list>

@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Logger {
-	public Logger () {
+	private Logger () {
 	}
 
 	static File logFile;
