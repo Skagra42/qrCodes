@@ -14,8 +14,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.EnumMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class CodeCreator {
+	private CodeCreator () { }
+
 	//args [0] is the path of the file the codes will be put in.
 	//args [1] is the datatype.
 	//args [2] is the error correction.
@@ -107,5 +110,11 @@ public class CodeCreator {
 		}
 
 		return ( MatrixToImageWriter.toBufferedImage ( bitMatrix ) );
+	}
+
+	public static void codeCreatorQuestions () {
+		try ( Scanner scanner = new Scanner ( System.in ) ) {
+
+		}
 	}
 }

@@ -16,6 +16,8 @@ import java.util.EnumMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import static main.java_package.CodeCreator.codeCreatorQuestions;
+
 public class Main {
 	public static void main (String [] args) throws IOException {
 		Logger.load ();
@@ -28,13 +30,13 @@ public class Main {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
 			String readOrCreate = scanner.next ().toLowerCase ();
 			switch (readOrCreate) {
-				case "create." :
-				case "create" :
+				case "create.", "create" :
 					Logger.log ("Create.");
+					codeCreatorQuestions ();
 					break;
-				case "read." :
-				case "read" :
+				case "read.", "read" :
 					Logger.log ("Read.");
+					codeCreatorQuestions ();
 					break;
 				default :
 					Logger.log ( "Please answer with \"Read.\" or \"Create.\"." );
