@@ -20,10 +20,10 @@ import static main.java_package.CodeCreator.codeCreatorQuestions;
 import static main.java_package.CodeReader.codeReaderQuestions;
 
 public class Main {
-	public static void main (String [] args) throws IOException {
+	public static void main ( String[] args ) throws IOException {
 		Logger.load ();
 		Logger.log ( "main\n" );
-		Logger.logAndPrint ("Would you like to read or create QR codes?");
+		Logger.logAndPrint ( "Would you like to read or create QR codes?" );
 		readOrCreateQuestion ();
 	}
 

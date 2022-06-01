@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Added to the questions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java_package/CodeReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/CodeReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java_package/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java_package/QRCodeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/QRCodeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java_package/QRCodeExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/QRCodeExtended.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -34,15 +44,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "last_opened_file_path": "C:/Users/herob/Downloads/qrCodes/src/test",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/herob/Downloads/qrCodes/src/test&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\herob\Downloads\qrCodes\src\test" />
@@ -91,6 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test.java_package.Main" />
+        <item itemvalue="Application.main.java_package.Main" />
         <item itemvalue="Application.main.java_package.Main" />
         <item itemvalue="Application.test.java_package.Main" />
       </list>

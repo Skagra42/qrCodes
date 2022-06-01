@@ -17,7 +17,8 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class CodeCreator {
-	private CodeCreator () { }
+	private CodeCreator () {
+	}
 
 	//args [0] is the path of the file the codes will be put in.
 	//args [1] is the datatype.
@@ -28,7 +29,7 @@ public class CodeCreator {
 	//args [6+] are the names, followed by the Strings to turn into codes, followed by whether or not those strings
 	// are names of files to turn into codes.
 	public static void codeCreatorMain ( String[] args ) throws FormatException, IOException {
-		Logger.log ("codeCreatorMain\n");
+		Logger.log ( "codeCreatorMain\n" );
 
 		for ( int a = 8 ; a < args.length ; a += 3 ) {
 			String[] relevantArgs = new String[ 9 ];
@@ -64,7 +65,8 @@ public class CodeCreator {
 	}
 
 	public static BufferedImage createCodeHelper ( int width , int height , String errorCorrection ,
-												 String versionInput , String input ) throws FormatException, IOException {
+												   String versionInput , String input ) throws FormatException,
+			IOException {
 		BitMatrix bitMatrix = new BitMatrix ( width , height );
 		ErrorCorrectionLevel errorCorrectionLevel;
 
