@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Added to the questions.">
+    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Fixed problems with readOrCreateQuestions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -141,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654053555298</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed problems with readOrCreateQuestions.">
+      <created>1654054292730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654054292730</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +171,7 @@
     <MESSAGE value="Created QRCodeData.java." />
     <MESSAGE value="Set up some classes and began to create the user interface." />
     <MESSAGE value="Added to the questions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to the questions." />
+    <MESSAGE value="Fixed problems with readOrCreateQuestions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed problems with readOrCreateQuestions." />
   </component>
 </project>
