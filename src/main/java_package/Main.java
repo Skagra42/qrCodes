@@ -17,6 +17,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 import static main.java_package.CodeCreator.codeCreatorQuestions;
+import static main.java_package.CodeReader.codeReaderQuestions;
 
 public class Main {
 	public static void main (String [] args) throws IOException {
@@ -29,19 +30,19 @@ public class Main {
 	public static void readOrCreateQuestion () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
 			String readOrCreate = scanner.next ().toLowerCase ();
-			switch (readOrCreate) {
-				case "create.", "create" :
-					Logger.log ("Create.");
+			switch ( readOrCreate ) {
+				case "create." , "create" -> {
+					Logger.log ( "Create." );
 					codeCreatorQuestions ();
-					break;
-				case "read.", "read" :
-					Logger.log ("Read.");
-					codeCreatorQuestions ();
-					break;
-				default :
+				}
+				case "read." , "read" -> {
+					Logger.log ( "Read." );
+					codeReaderQuestions ();
+				}
+				default -> {
 					Logger.log ( "Please answer with \"Read.\" or \"Create.\"." );
 					readOrCreateQuestion ();
-					break;
+				}
 			}
 		}
 	}
