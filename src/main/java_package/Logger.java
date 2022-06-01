@@ -4,6 +4,9 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Logger {
+	public Logger () {
+	}
+
 	static File logFile;
 	static File logErrorFile;
 
@@ -11,7 +14,7 @@ public class Logger {
 	static FileWriter logErrorWriter;
 
 	public static void load () throws IOException {
-		File logCount = new File("main/resources/LogCount");
+		File logCount = new File ( "main/resources/LogCount" );
 
 		Scanner scanner = new Scanner ( logCount );
 
@@ -28,14 +31,14 @@ public class Logger {
 
 		scanner.close ();
 
-		try (Writer writer = new FileWriter ( logCount )) {
+		try ( Writer writer = new FileWriter ( logCount ) ) {
 			writer.write ( Integer.toString ( scannerInt ) );
 		}
 	}
 
 	static void log ( String string ) throws IOException {
 		logWriter.write ( string );
-		logError (string);
+		logError ( string );
 	}
 
 	static void logError ( String string ) throws IOException {
@@ -43,7 +46,7 @@ public class Logger {
 	}
 
 	public static void logAndPrint ( String s ) throws IOException {
-		log (s);
-		System.out.print (s);
+		log ( s );
+		System.out.print ( s );
 	}
 }
