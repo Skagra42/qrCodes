@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Working on the QR code writer.">
-      <change afterPath="$PROJECT_DIR$/src/com/QRCodeData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/QRCodeExtended.java" afterDir="false" />
+    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java_package/CodeReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java_package/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java_package/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java_package/QRCodeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LogCount" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/QRCodeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/QRCodeExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/QRCodeExtended.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +35,74 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="29GemQ5W9MwTdfEXa7RgclmlxMm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/herob/Downloads/qrCodes/src/test&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\herob\Downloads\qrCodes\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main.java_package.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
+      <module name="qrCodes" />
+      <option name="PROGRAM_PARAMETERS" value="codes String M default 100 300 Example exampleString false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.java_package.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java_package.Main" />
+      <module name="qrCodes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java_package.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.java_package.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.java_package.Main" />
+      <module name="qrCodes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java_package.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main.java_package.Main" />
+        <item itemvalue="Application.test.java_package.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -55,6 +116,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -66,32 +128,30 @@
       <option name="presentableId" value="Default" />
       <updated>1652744007471</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created QRCodeData.java.">
+      <created>1653098418690</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653098418690</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working on the QR code writer." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on the QR code writer." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1653098268923">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1653098268923" />
-    <state x="1177" y="112" key="CommitChangelistDialog2" timestamp="1653098385387">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1177" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1653098385387" />
-    <state x="461" y="161" key="SettingsEditor" timestamp="1652755544989">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1652755544989" />
-    <state x="685" y="480" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1652755537949">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="685" y="480" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1652755537949" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1653094460605">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1653094460605" />
+    <MESSAGE value="Created QRCodeData.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created QRCodeData.java." />
   </component>
 </project>
