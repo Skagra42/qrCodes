@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Added to the questions.">
+    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Remade project from Github after problems with an attempt to add Gradle.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java_package/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/Logger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/herob/Downloads/qrCodes/src/test&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -95,8 +98,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test.java_package.Main" />
-        <item itemvalue="Application.main.java_package.Main" />
         <item itemvalue="Application.main.java_package.Main" />
         <item itemvalue="Application.test.java_package.Main" />
       </list>
@@ -147,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654053555298</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Remade project from Github after problems with an attempt to add Gradle.">
+      <created>1654123193266</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654123193266</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +174,7 @@
     <MESSAGE value="Created QRCodeData.java." />
     <MESSAGE value="Set up some classes and began to create the user interface." />
     <MESSAGE value="Added to the questions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to the questions." />
+    <MESSAGE value="Remade project from Github after problems with an attempt to add Gradle." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remade project from Github after problems with an attempt to add Gradle." />
   </component>
 </project>

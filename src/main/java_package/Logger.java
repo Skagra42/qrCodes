@@ -14,22 +14,28 @@ public class Logger {
 	static FileWriter logErrorWriter;
 
 	public static void load () throws IOException {
-		File logCount = new File ( "main/resources/LogCount" );
+		File logCount = new File ( "src/main/resources/LogCount" );
 
 		Scanner scanner = new Scanner ( logCount );
 
-		String logFileString = "main/logs/log/";
-		String logErrorFileString = "main/logs/log_error/";
+		String logFileString = "src/main/logs/";
+		String logErrorFileString = "src/main/logs/";
 
 		int scannerInt = scanner.nextInt ();
 
 		logFileString += Integer.toString ( scannerInt );
 		logErrorFileString += Integer.toString ( scannerInt );
 
+		logFileString += "/log.txt";
+		logErrorFileString += "/log_error.txt";
+
 		logFile = new File ( logFileString );
-		logFile = new File ( logErrorFileString );
+		logErrorFile = new File ( logErrorFileString );
 
 		scanner.close ();
+
+		logWriter = new FileWriter ( logFile );
+		logErrorWriter = new FileWriter ( logErrorFile );
 
 		try ( Writer writer = new FileWriter ( logCount ) ) {
 			writer.write ( Integer.toString ( scannerInt ) );

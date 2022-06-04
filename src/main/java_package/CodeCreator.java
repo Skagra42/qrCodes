@@ -12,6 +12,7 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.lang.module.Configuration;
 import java.util.EnumMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -114,9 +115,9 @@ public class CodeCreator {
 		return ( MatrixToImageWriter.toBufferedImage ( bitMatrix ) );
 	}
 
-	public static void codeCreatorQuestions () {
+	public static void codeCreatorQuestions () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
-
+			Logger.logAndPrint ( "How many codes do you wish to create?" );
 		}
 	}
 }
