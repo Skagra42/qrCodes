@@ -7,8 +7,7 @@ public class Logger {
 	private Logger () {
 	}
 
-	static File logFile;
-	static File logErrorFile;
+	static File logFolder;
 
 	static FileWriter logWriter;
 	static FileWriter logErrorWriter;
@@ -26,19 +25,19 @@ public class Logger {
 		logFileString += Integer.toString ( scannerInt );
 		logErrorFileString += Integer.toString ( scannerInt );
 
+		logFolder = new File (logFileString);
+		logFolder.mkdir ();
+
 		logFileString += "/log.txt";
 		logErrorFileString += "/log_error.txt";
 
-		logFile = new File ( logFileString );
-		logErrorFile = new File ( logErrorFileString );
-
 		scanner.close ();
 
-		logWriter = new FileWriter ( logFile );
-		logErrorWriter = new FileWriter ( logErrorFile );
+		logWriter = new FileWriter ( logFileString );
+		logErrorWriter = new FileWriter ( logErrorFileString );
 
 		try ( Writer writer = new FileWriter ( logCount ) ) {
-			writer.write ( Integer.toString ( scannerInt ) );
+			writer.write ( Integer.toString ( scannerInt + 1 ) );
 		}
 	}
 
