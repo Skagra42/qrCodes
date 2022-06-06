@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Changed readOrCreateQuestion.">
+    <list default="true" id="0b77e725-5bca-4724-811c-62797d38a4f1" name="Default Changelist" comment="Changed codeCreatorQuestions and started working on codeNumberQuestion.">
+      <change afterPath="$PROJECT_DIR$/src/main/java_package/OneCodeData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/CodeCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java_package/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654475848449</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changed codeCreatorQuestions and started working on codeNumberQuestion.">
+      <created>1654476927181</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654476927181</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +216,7 @@
     <MESSAGE value="Fixed a problem with Logger." />
     <MESSAGE value="Updated try/catch blocks to work with Logger." />
     <MESSAGE value="Changed readOrCreateQuestion." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed readOrCreateQuestion." />
+    <MESSAGE value="Changed codeCreatorQuestions and started working on codeNumberQuestion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed codeCreatorQuestions and started working on codeNumberQuestion." />
   </component>
 </project>
