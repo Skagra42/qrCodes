@@ -30,7 +30,7 @@ public class Main {
 	public static void readOrCreateQuestion () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
 			String readOrCreate = scanner.next ();
-			Logger.log ( readOrCreate );
+			Logger.log ( readOrCreate + "\n" );
 			readOrCreate = readOrCreate.toLowerCase ();
 			switch ( readOrCreate ) {
 				case "create." , "create" -> {
@@ -40,13 +40,35 @@ public class Main {
 					codeReaderQuestions ();
 				}
 				default -> {
-					Logger.log ( "Please answer with \"Read.\" or \"Create.\"." );
+					Logger.logAndPrint ( "Please answer with \"Read.\" or \"Create.\".\n" );
 					readOrCreateQuestion ();
 				}
 			}
 		} catch ( Exception e ) {
 			Logger.logError ( e.getMessage () + "\n" );
 		}
+	}
+
+	public static ErrorCorrectionLevel stringToECL ( String string ) throws IOException {
+		ErrorCorrectionLevel errorCorrectionLevel;
+
+		switch ( string ) {
+			case "L" -> errorCorrectionLevel = ErrorCorrectionLevel.L;
+			case "M" -> errorCorrectionLevel = ErrorCorrectionLevel.M;
+			case "Q" -> errorCorrectionLevel = ErrorCorrectionLevel.Q;
+			case "H" -> errorCorrectionLevel = ErrorCorrectionLevel.H;
+			default -> {
+				errorCorrectionLevel = ErrorCorrectionLevel.H;
+				try {
+					Logger.logError ( "The error correction input (" + string + ") was not used properly" +
+							".\n" );
+				} catch ( IOException e ) {
+					Logger.logError ( e.getMessage () + "\n" );
+				}
+			}
+		}
+
+		return (errorCorrectionLevel);
 	}
 }
 

@@ -81,25 +81,7 @@ public class CodeCreator {
 		}
 		 */
 
-		switch ( errorCorrection ) {
-			case "L":
-				errorCorrectionLevel = ErrorCorrectionLevel.L;
-				break;
-			case "M":
-				errorCorrectionLevel = ErrorCorrectionLevel.M;
-				break;
-			case "Q":
-				errorCorrectionLevel = ErrorCorrectionLevel.Q;
-				break;
-			case "H":
-				errorCorrectionLevel = ErrorCorrectionLevel.H;
-				break;
-			default:
-				errorCorrectionLevel = ErrorCorrectionLevel.H;
-				Logger.logError ( "The error correction parameter (" + errorCorrection + ") was not used properly" +
-						".\n" );
-				break;
-		}
+		errorCorrectionLevel = Main.stringToECL (errorCorrection);
 
 		Map < EncodeHintType, Object > map = new EnumMap <> ( EncodeHintType.class );
 		map.put ( EncodeHintType.ERROR_CORRECTION , errorCorrectionLevel );
@@ -109,17 +91,48 @@ public class CodeCreator {
 			QRCodeWriter qrCodeWriter = new QRCodeWriter ();
 			bitMatrix = qrCodeWriter.encode ( input , BarcodeFormat.QR_CODE , width , height , map );
 		} catch ( IllegalArgumentException | WriterException e ) {
-			Logger.logError (e.getMessage () + "\n");
+			Logger.logError ( e.getMessage () + "\n" );
 		}
 
 		return ( MatrixToImageWriter.toBufferedImage ( bitMatrix ) );
 	}
 
 	public static void codeCreatorQuestions () throws IOException {
+		Logger.log ("codeCreatorQuestions\n");
+
+		int codeNumber = codeNumberQuestion ();
+		QRCodeData[] qrCodeDataArray = new QRCodeData[ codeNumber ];
+		QRCodeExtended[] qrCodeExtendedArray = new QRCodeExtended[ codeNumber ];
+
+		if (codeNumber == 1) {
+
+		}
+	}
+
+	private static OneCodeData codeDataQuestions () throws IOException {
+		Logger.log ("codeDataQuestions\n");
+		OneCodeData oneCodeData = new OneCodeData ();
+
+		return ( oneCodeData );
+	}
+
+	private static int codeNumberQuestion () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
-			Logger.logAndPrint ( "How many codes do you wish to create?" );
+			int codeNumber;
+			Logger.logAndPrint ( "How many codes do you wish to create?  Please enter your answer in the same format " +
+					"as \"1\".\n" );
+			codeNumber = ( scanner.nextInt () );
+			Logger.log ( codeNumber + "\n" );
+			if (codeNumber < 0) {
+				Logger.logAndPrint ( "You may not create fewer than 0 codes.\n" );
+				codeNumber = codeNumberQuestion ();
+			}
+			return ( codeNumber );
 		} catch ( Exception e ) {
 			Logger.logError ( e.getMessage () + "\n" );
 		}
+
+		Logger.logError ( "codeNumberQuestion will return -1.\n" );
+		return ( - 1 );
 	}
 }
