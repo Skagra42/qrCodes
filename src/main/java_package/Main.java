@@ -23,7 +23,7 @@ public class Main {
 	public static void main ( String[] args ) throws IOException {
 		Logger.load ();
 		Logger.log ( "main\n" );
-		Logger.logAndPrint ( "Would you like to read or create QR codes?" );
+		Logger.logAndPrint ( "Would you like to read or create QR codes?\n" );
 		readOrCreateQuestion ();
 	}
 

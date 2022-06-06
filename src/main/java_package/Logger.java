@@ -43,11 +43,13 @@ public class Logger {
 
 	static void log ( String string ) throws IOException {
 		logWriter.write ( string );
+		logWriter.flush ();
 		logError ( string );
 	}
 
 	static void logError ( String string ) throws IOException {
 		logErrorWriter.write ( string );
+		logErrorWriter.flush ();
 	}
 
 	public static void logAndPrint ( String s ) throws IOException {
