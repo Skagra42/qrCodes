@@ -1,5 +1,6 @@
 package main.java_package;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class CodeReader {
@@ -10,9 +11,11 @@ public class CodeReader {
 
 	}
 
-	public static void codeReaderQuestions () {
+	public static void codeReaderQuestions () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
 
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
 		}
 	}
 }

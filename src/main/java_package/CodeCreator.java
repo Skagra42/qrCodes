@@ -109,7 +109,7 @@ public class CodeCreator {
 			QRCodeWriter qrCodeWriter = new QRCodeWriter ();
 			bitMatrix = qrCodeWriter.encode ( input , BarcodeFormat.QR_CODE , width , height , map );
 		} catch ( IllegalArgumentException | WriterException e ) {
-			e.printStackTrace ();
+			Logger.logError (e.getMessage () + "\n");
 		}
 
 		return ( MatrixToImageWriter.toBufferedImage ( bitMatrix ) );
@@ -118,6 +118,8 @@ public class CodeCreator {
 	public static void codeCreatorQuestions () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
 			Logger.logAndPrint ( "How many codes do you wish to create?" );
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
 		}
 	}
 }

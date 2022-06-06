@@ -44,6 +44,8 @@ public class Main {
 					readOrCreateQuestion ();
 				}
 			}
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
 		}
 	}
 }
