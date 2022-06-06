@@ -81,25 +81,7 @@ public class CodeCreator {
 		}
 		 */
 
-		switch ( errorCorrection ) {
-			case "L":
-				errorCorrectionLevel = ErrorCorrectionLevel.L;
-				break;
-			case "M":
-				errorCorrectionLevel = ErrorCorrectionLevel.M;
-				break;
-			case "Q":
-				errorCorrectionLevel = ErrorCorrectionLevel.Q;
-				break;
-			case "H":
-				errorCorrectionLevel = ErrorCorrectionLevel.H;
-				break;
-			default:
-				errorCorrectionLevel = ErrorCorrectionLevel.H;
-				Logger.logError ( "The error correction parameter (" + errorCorrection + ") was not used properly" +
-						".\n" );
-				break;
-		}
+		errorCorrectionLevel = Main.stringToECL (errorCorrection);
 
 		Map < EncodeHintType, Object > map = new EnumMap <> ( EncodeHintType.class );
 		map.put ( EncodeHintType.ERROR_CORRECTION , errorCorrectionLevel );
@@ -130,6 +112,7 @@ public class CodeCreator {
 	private static OneCodeData codeDataQuestions () throws IOException {
 		Logger.log ("codeDataQuestions\n");
 		OneCodeData oneCodeData = new OneCodeData ();
+
 		return ( oneCodeData );
 	}
 
