@@ -116,10 +116,21 @@ public class CodeCreator {
 	}
 
 	public static void codeCreatorQuestions () throws IOException {
+		int codeNumber = codeNumberQuestion ();
+		QRCodeData [] qrCodeDataArray = new QRCodeData [codeNumber];
+		QRCodeExtended [] qrCodeExtendedArray = new QRCodeExtended [codeNumber];
+	}
+
+	private static int codeNumberQuestion () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
-			Logger.logAndPrint ( "How many codes do you wish to create?" );
+			Logger.logAndPrint ( "How many codes do you wish to create?\n" );
+			String codeNumberString = scanner.next ();
+			Logger.log (codeNumberString);
+			codeNumberString = codeNumberString.toLowerCase ();
 		} catch ( Exception e ) {
 			Logger.logError ( e.getMessage () + "\n" );
 		}
+
+		return (-1);
 	}
 }

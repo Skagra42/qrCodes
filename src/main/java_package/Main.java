@@ -30,7 +30,7 @@ public class Main {
 	public static void readOrCreateQuestion () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
 			String readOrCreate = scanner.next ();
-			Logger.log ( readOrCreate );
+			Logger.log ( readOrCreate + "\n" );
 			readOrCreate = readOrCreate.toLowerCase ();
 			switch ( readOrCreate ) {
 				case "create." , "create" -> {
@@ -40,7 +40,7 @@ public class Main {
 					codeReaderQuestions ();
 				}
 				default -> {
-					Logger.log ( "Please answer with \"Read.\" or \"Create.\"." );
+					Logger.logAndPrint ( "Please answer with \"Read.\" or \"Create.\".\n" );
 					readOrCreateQuestion ();
 				}
 			}
