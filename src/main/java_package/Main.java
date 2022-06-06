@@ -29,14 +29,14 @@ public class Main {
 
 	public static void readOrCreateQuestion () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
-			String readOrCreate = scanner.next ().toLowerCase ();
+			String readOrCreate = scanner.next ();
+			Logger.log ( readOrCreate );
+			readOrCreate = readOrCreate.toLowerCase ();
 			switch ( readOrCreate ) {
 				case "create." , "create" -> {
-					Logger.log ( "Create." );
 					codeCreatorQuestions ();
 				}
 				case "read." , "read" -> {
-					Logger.log ( "Read." );
 					codeReaderQuestions ();
 				}
 				default -> {
