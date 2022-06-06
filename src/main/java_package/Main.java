@@ -68,7 +68,7 @@ public class Main {
 			}
 		}
 
-		return (errorCorrectionLevel);
+		return ( errorCorrectionLevel );
 	}
 }
 

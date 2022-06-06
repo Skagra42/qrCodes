@@ -81,7 +81,7 @@ public class CodeCreator {
 		}
 		 */
 
-		errorCorrectionLevel = Main.stringToECL (errorCorrection);
+		errorCorrectionLevel = Main.stringToECL ( errorCorrection );
 
 		Map < EncodeHintType, Object > map = new EnumMap <> ( EncodeHintType.class );
 		map.put ( EncodeHintType.ERROR_CORRECTION , errorCorrectionLevel );
@@ -98,19 +98,19 @@ public class CodeCreator {
 	}
 
 	public static void codeCreatorQuestions () throws IOException {
-		Logger.log ("codeCreatorQuestions\n");
+		Logger.log ( "codeCreatorQuestions\n" );
 
 		int codeNumber = codeNumberQuestion ();
 		QRCodeData[] qrCodeDataArray = new QRCodeData[ codeNumber ];
 		QRCodeExtended[] qrCodeExtendedArray = new QRCodeExtended[ codeNumber ];
 
-		if (codeNumber == 1) {
+		if ( codeNumber == 1 ) {
 
 		}
 	}
 
 	private static OneCodeData codeDataQuestions () throws IOException {
-		Logger.log ("codeDataQuestions\n");
+		Logger.log ( "codeDataQuestions\n" );
 		OneCodeData oneCodeData = new OneCodeData ();
 
 		return ( oneCodeData );
@@ -119,11 +119,12 @@ public class CodeCreator {
 	private static int codeNumberQuestion () throws IOException {
 		try ( Scanner scanner = new Scanner ( System.in ) ) {
 			int codeNumber;
-			Logger.logAndPrint ( "How many codes do you wish to create?  Please enter your answer in the same format " +
+			Logger.logAndPrint ( "How many codes do you wish to create?  Please enter your answer in the same format" +
+					" " +
 					"as \"1\".\n" );
 			codeNumber = ( scanner.nextInt () );
 			Logger.log ( codeNumber + "\n" );
-			if (codeNumber < 0) {
+			if ( codeNumber < 0 ) {
 				Logger.logAndPrint ( "You may not create fewer than 0 codes.\n" );
 				codeNumber = codeNumberQuestion ();
 			}

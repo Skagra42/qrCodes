@@ -41,10 +41,10 @@ public class OneCodeData {
 
 	public void setErrorCorrection ( String errorCorrection ) throws IOException {
 		this.errorCorrection = errorCorrection;
-		errorCorrectionECL = Main.stringToECL (errorCorrection);
+		errorCorrectionECL = Main.stringToECL ( errorCorrection );
 	}
 
-	public void setErrorCorrection (ErrorCorrectionLevel errorCorrection) {
+	public void setErrorCorrection ( ErrorCorrectionLevel errorCorrection ) {
 		errorCorrectionECL = errorCorrection;
 		this.errorCorrection = errorCorrection.toString ();
 	}
@@ -110,7 +110,7 @@ public class OneCodeData {
 		this.isFile = isFile;
 	}
 
-	public void setIsFile (boolean isFile) {
+	public void setIsFile ( boolean isFile ) {
 		isFileBoolean = isFile;
 		this.isFile = String.valueOf ( isFile );
 	}
