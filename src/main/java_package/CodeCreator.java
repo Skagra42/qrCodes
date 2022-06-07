@@ -12,10 +12,10 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.lang.module.Configuration;
 import java.util.EnumMap;
 import java.util.Map;
-import java.util.Scanner;
+
+import static main.java_package.Main.scanner;
 
 public class CodeCreator {
 	private CodeCreator () {
@@ -105,6 +105,8 @@ public class CodeCreator {
 		QRCodeExtended[] qrCodeExtendedArray = new QRCodeExtended[ codeNumber ];
 
 		if ( codeNumber == 1 ) {
+			OneCodeData oneCodeData = codeDataQuestions ();
+		} else {
 
 		}
 	}
@@ -112,17 +114,51 @@ public class CodeCreator {
 	private static OneCodeData codeDataQuestions () throws IOException {
 		Logger.log ( "codeDataQuestions\n" );
 		OneCodeData oneCodeData = new OneCodeData ();
-
+		oneCodeData.setName ( nameQuestion () );
+		oneCodeData.setFilePath ( filePathQuestion ( oneCodeData.getName () ) );
 		return ( oneCodeData );
 	}
 
+	private static String filePathQuestion ( String name ) throws IOException {
+		Logger.log ( "filePathQuestion\n" );
+
+		try {
+			Logger.logAndPrint ( "What should the file path of " + name + " be?\n" );
+			String result = scanner.nextLine ();
+			Logger.log ( result + "\n" );
+			return ( result );
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
+		}
+
+		Logger.logError ( "filePathQuestion will return \"\".\n" );
+		return ( "" );
+	}
+
+	private static String nameQuestion () throws IOException {
+		Logger.log ( "nameQuestion\n" );
+
+		try {
+			Logger.logAndPrint ( "What should the name of this QR code be?\n" );
+			scanner.nextLine ();
+			String result = scanner.nextLine ();
+			Logger.log ( result + "\n" );
+			return ( result );
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
+		}
+
+		Logger.logError ( "nameQuestion will return \"\".\n" );
+		return ( "" );
+	}
+
 	private static int codeNumberQuestion () throws IOException {
-		try ( Scanner scanner = new Scanner ( System.in ) ) {
+		try {
 			int codeNumber;
 			Logger.logAndPrint ( "How many codes do you wish to create?  Please enter your answer in the same format" +
 					" " +
 					"as \"1\".\n" );
-			codeNumber = ( scanner.nextInt () );
+			codeNumber = scanner.nextInt ();
 			Logger.log ( codeNumber + "\n" );
 			if ( codeNumber < 0 ) {
 				Logger.logAndPrint ( "You may not create fewer than 0 codes.\n" );

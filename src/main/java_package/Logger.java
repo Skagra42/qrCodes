@@ -15,23 +15,23 @@ public class Logger {
 	public static void load () throws IOException {
 		File logCount = new File ( "src/main/resources/LogCount" );
 
-		Scanner scanner = new Scanner ( logCount );
+		Scanner loggerScanner = new Scanner ( logCount );
 
 		String logFileString = "src/main/logs/";
 		String logErrorFileString = "src/main/logs/";
 
-		int scannerInt = scanner.nextInt ();
+		int scannerInt = loggerScanner.nextInt ();
 
 		logFileString += Integer.toString ( scannerInt );
 		logErrorFileString += Integer.toString ( scannerInt );
 
-		logFolder = new File (logFileString);
+		logFolder = new File ( logFileString );
 		logFolder.mkdir ();
 
 		logFileString += "/log.txt";
 		logErrorFileString += "/log_error.txt";
 
-		scanner.close ();
+		loggerScanner.close ();
 
 		logWriter = new FileWriter ( logFileString );
 		logErrorWriter = new FileWriter ( logErrorFileString );
