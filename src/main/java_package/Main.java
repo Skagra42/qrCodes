@@ -20,6 +20,8 @@ import static main.java_package.CodeCreator.codeCreatorQuestions;
 import static main.java_package.CodeReader.codeReaderQuestions;
 
 public class Main {
+	public static Scanner scanner = new Scanner ( System.in );
+
 	public static void main ( String[] args ) throws IOException {
 		Logger.load ();
 		Logger.log ( "main\n" );
@@ -28,7 +30,7 @@ public class Main {
 	}
 
 	public static void readOrCreateQuestion () throws IOException {
-		try ( Scanner scanner = new Scanner ( System.in ) ) {
+		try {
 			String readOrCreate = scanner.next ();
 			Logger.log ( readOrCreate + "\n" );
 			readOrCreate = readOrCreate.toLowerCase ();
