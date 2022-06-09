@@ -101,22 +101,72 @@ public class CodeCreator {
 		Logger.log ( "codeCreatorQuestions\n" );
 
 		int codeNumber = codeNumberQuestion ();
-		QRCodeData[] qrCodeDataArray = new QRCodeData[ codeNumber ];
+		OneCodeData[] oneCodeDataArray = new OneCodeData[ codeNumber ];
 		QRCodeExtended[] qrCodeExtendedArray = new QRCodeExtended[ codeNumber ];
 
-		if ( codeNumber == 1 ) {
-			OneCodeData oneCodeData = codeDataQuestions ();
-		} else {
-
+		for (int i = 0; i < codeNumber; i++) {
+			Logger.logAndPrint ( "The following questions pertain to QR code " + (i + 1) + " of " + codeNumber + ".\n" );
+			oneCodeDataArray [i] = codeDataQuestions ( i );
 		}
 	}
 
-	private static OneCodeData codeDataQuestions () throws IOException {
+	private static OneCodeData codeDataQuestions ( int i ) throws IOException {
 		Logger.log ( "codeDataQuestions\n" );
 		OneCodeData oneCodeData = new OneCodeData ();
-		oneCodeData.setName ( nameQuestion () );
+		oneCodeData.setName ( nameQuestion ( i ) );
 		oneCodeData.setFilePath ( filePathQuestion ( oneCodeData.getName () ) );
+		oneCodeData.setDatatype ( datatypeQuestion ( oneCodeData.getName () ) );
+		oneCodeData.setErrorCorrection ( errorCorrectionQuestion ( oneCodeData.getName () ) );
+		oneCodeData.setVersion ( versionQuestion ( oneCodeData.getName () ) );
 		return ( oneCodeData );
+	}
+
+	private static String errorCorrectionQuestion ( String name ) throws IOException {
+		Logger.log ("errorCorrectionQuestion\n");
+
+		try {
+			Logger.logAndPrint ( "What should the error correction level of " + name + " be?  Please answer with \"L.\", \"M.\", \"Q.\", or \"H.\".\n" );
+			String result = scanner.nextLine ();
+			Logger.log ( result + "\n" );
+			return ( result );
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
+		}
+
+		Logger.logError ( "datatypeQuestion will return \"\".\n" );
+		return ( "" );
+	}
+
+	private static String versionQuestion ( String name ) throws IOException {
+		Logger.log ("versionQuestion\n");
+
+		try {
+			Logger.logAndPrint ( "What should the version of " + name + " be?\n" );
+			String result = scanner.nextLine ();
+			Logger.log ( result + "\n" );
+			return ( result );
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
+		}
+
+		Logger.logError ( "versionQuestion will return \"\".\n" );
+		return ( "" );
+	}
+
+	private static String datatypeQuestion ( String name ) throws IOException {
+		Logger.log ("datatypeQuestion\n");
+
+		try {
+			Logger.logAndPrint ( "What should the datatype of " + name + " be?\n" );
+			String result = scanner.nextLine ();
+			Logger.log ( result + "\n" );
+			return ( result );
+		} catch ( Exception e ) {
+			Logger.logError ( e.getMessage () + "\n" );
+		}
+
+		Logger.logError ( "datatypeQuestion will return \"\".\n" );
+		return ( "" );
 	}
 
 	private static String filePathQuestion ( String name ) throws IOException {
@@ -135,12 +185,14 @@ public class CodeCreator {
 		return ( "" );
 	}
 
-	private static String nameQuestion () throws IOException {
+	private static String nameQuestion ( int i ) throws IOException {
 		Logger.log ( "nameQuestion\n" );
 
 		try {
 			Logger.logAndPrint ( "What should the name of this QR code be?\n" );
-			scanner.nextLine ();
+			if ( i == 0 ) {
+				scanner.nextLine ();
+			}
 			String result = scanner.nextLine ();
 			Logger.log ( result + "\n" );
 			return ( result );

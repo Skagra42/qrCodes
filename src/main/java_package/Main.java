@@ -55,10 +55,10 @@ public class Main {
 		ErrorCorrectionLevel errorCorrectionLevel;
 
 		switch ( string ) {
-			case "L" -> errorCorrectionLevel = ErrorCorrectionLevel.L;
-			case "M" -> errorCorrectionLevel = ErrorCorrectionLevel.M;
-			case "Q" -> errorCorrectionLevel = ErrorCorrectionLevel.Q;
-			case "H" -> errorCorrectionLevel = ErrorCorrectionLevel.H;
+			case "L" , "L." -> errorCorrectionLevel = ErrorCorrectionLevel.L;
+			case "M" , "M." -> errorCorrectionLevel = ErrorCorrectionLevel.M;
+			case "Q" , "Q." -> errorCorrectionLevel = ErrorCorrectionLevel.Q;
+			case "H" , "H." -> errorCorrectionLevel = ErrorCorrectionLevel.H;
 			default -> {
 				errorCorrectionLevel = ErrorCorrectionLevel.H;
 				try {

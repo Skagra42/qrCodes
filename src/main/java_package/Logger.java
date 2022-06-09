@@ -52,8 +52,13 @@ public class Logger {
 		logErrorWriter.flush ();
 	}
 
-	public static void logAndPrint ( String s ) throws IOException {
-		log ( s );
-		System.out.print ( s );
+	public static void logAndPrint ( String string ) throws IOException {
+		log ( string );
+		System.out.print ( string );
+	}
+
+	public static void logErrorAndPrint ( String string ) throws IOException {
+		logError ( string );
+		System.out.print ( string );
 	}
 }
